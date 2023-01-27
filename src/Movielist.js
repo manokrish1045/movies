@@ -13,7 +13,10 @@ export function Movielist() {
             method: "GET",
         })
             .then((data) => data.json())
-            .then((mvs) => setmovielist(mvs));
+            .then((mvs) =>
+                setmovielist(mvs)
+            );
+
     }
 
     useEffect(() => getMovies(), [])
@@ -24,13 +27,13 @@ export function Movielist() {
         }).then(() => getMovies())
     }
     const navigate = useNavigate()
-
+    console.log(movieLists)
     return (
         <div>
 
             <div className="movie-list">
 
-                {movieLists.map((mv) => (
+                {movieLists?.map((mv) => (
                     <Movie
                         movie={mv}
                         deleteButton={
