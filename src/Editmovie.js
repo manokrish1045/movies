@@ -25,7 +25,7 @@ export function Editmovie() {
             .then((data) => data.json())
             .then((mv) => setMovie(mv));
     };
-    useEffect(() => getMovie(), []);
+    useEffect(() => getMovie(),);
     console.log(movie)
     return (
         <div>
