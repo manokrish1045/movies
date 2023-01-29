@@ -1,44 +1,4 @@
-// import { useFormik } from "formik";
-// import * as yup from "yup";
-// const formValidationschema = yup.object({
-//     email: yup.string().min(8),
-//     password: yup.string().min(8, "need a strong password").required().max(10, "too much"),
-// })
-// export function Basicform() {
-//     const formik = useFormik({
-//         initialValues: {
-//             email: "",
-//             password: "",
-//         },
-//         validationSchema: formValidationschema,
-//         onSubmit: (values) => {
-//             console.log("form is valid ", values)
-
-//         },
-//     })
-//     return (
-//         <div >
-//             <form className="basicform" onSubmit={formik.handleSubmit}>
-//                 <input
-//                     name="email"
-//                     type="email" placeholder="E-MAIL"
-//                     value={formik.values.email}
-//                     onChange={formik.handleChange} 
-//                     onBlur = {formik.handleBlur}/>
-//                 {formik.touched.email && formik.errors.email ? formik.errors.email : null}
-//                 <input
-//                     name="password"
-//                     type="text" placeholder="Password"
-//                     value={formik.values.password}
-//                     onChange={formik.handleChange} 
-//                     onBlur = {formik.handleBlur}/>
-//                 {formik.touched.password && formik.errors.password? formik.errors.password : null}
-//                 <button type="submit">Submit</button>
-//             </form>
-//         </div>
-//     );
-// }
-
+// 
 
 import { useFormik } from "formik";
 import * as yup from "yup";
